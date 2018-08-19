@@ -97,7 +97,11 @@ class Jco_Demo_Server_Public {
 		 */
 
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/jco-demo-server-public.js', array( 'jquery' ), $this->version, false );
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/getEmPixels.js', array('jquery'), $this->version, false);
+		if ( is_user_logged_in() ) {
+			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/getEmPixels.js', array('jquery'), $this->version, false);
+			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/term.js', array('jquery'), $this->version, false);
+			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tryit.js', array('jquery'), $this->version, false);
+		}
 	}
 
 }
