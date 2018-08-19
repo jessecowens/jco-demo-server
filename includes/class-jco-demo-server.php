@@ -67,8 +67,8 @@ class Jco_Demo_Server {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
-			$this->version = PLUGIN_NAME_VERSION;
+		if ( defined( 'JCO_DEMO_SERVER_VERSION' ) ) {
+			$this->version = JCO_DEMO_SERVER_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
