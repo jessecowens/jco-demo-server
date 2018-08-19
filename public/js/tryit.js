@@ -1,4 +1,5 @@
-jQuery.(document).ready(function() {
+(function( $ ) {
+$(document).ready(function() {
     var tryit_terms_hash = "";
     var tryit_console = "";
     var tryit_server = "tryit.whatdoyouneedthatfordude.com";
@@ -319,3 +320,4 @@ jQuery.(document).ready(function() {
         $('.nav-tabs > .active').prev('li').find('a').trigger('click');
     });
 });
+})( jQuery );
