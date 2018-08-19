@@ -98,12 +98,13 @@ class Jco_Demo_Server_Public {
 
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/jco-demo-server-public.js', array( 'jquery' ), $this->version, false );
 		if ( is_user_logged_in() ) {
-			wp_register_script( $this->plugin_name . '.jquery', plugin_dir_url( __FILE__ ) . 'js/jquery.min.js', array('jquery'), $this->version, true );
-			wp_register_script( $this->plugin_name . '.bootstrap', plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js', array('jquery'), $this->version, true );
+			//wp_register_script( $this->plugin_name . '.jquery', plugin_dir_url( __FILE__ ) . 'js/jquery.min.js', array('jquery'), $this->version, true );
+			//wp_register_script( $this->plugin_name . '.bootstrap', plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js', array('jquery'), $this->version, true );
 			wp_register_script( $this->plugin_name . '.getEmPixels', plugin_dir_url( __FILE__ ) . 'js/getEmPixels.js', array('jquery'), $this->version, false );
 			wp_register_script( $this->plugin_name . '.term', plugin_dir_url( __FILE__ ) . 'js/term.js', array('jquery'), $this->version, false );
 			wp_register_script( $this->plugin_name . '.tryit', plugin_dir_url( __FILE__ ) . 'js/tryit.js', array('jquery'), $this->version, false );
-			wp_enqueue_script( array( $this->plugin_name . '.getEmPixels', $this->plugin_name . '.term', $this->plugin_name . '.tryit', $this->plugin_name . '.jquery', $this->plugin_name . '.bootstrap' ) );
+			wp_enqueue_script( array( $this->plugin_name . '.getEmPixels', $this->plugin_name . '.term', $this->plugin_name . '.tryit' ) );
+			//, $this->plugin_name . '.jquery', $this->plugin_name . '.bootstrap'
 			//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/term.js', array(), $this->version, false);
 			//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tryit.js', array(), $this->version, false);
 		}
