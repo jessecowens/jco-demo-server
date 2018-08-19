@@ -98,15 +98,9 @@ class Jco_Demo_Server_Public {
 
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/jco-demo-server-public.js', array( 'jquery' ), $this->version, false );
 		if ( is_user_logged_in() ) {
-<<<<<<< HEAD
-			wp_enqueue_script( $this->plugin_name . 'getEmPixels.js', plugin_dir_url( __FILE__ ) . 'js/getEmPixels.js', array('jquery'), $this->version, false);
-			wp_enqueue_script( $this->plugin_name . 'term.js', plugin_dir_url( __FILE__ ) . 'js/term.js', array(), $this->version, false);
-			wp_enqueue_script( $this->plugin_name . 'tryit.js', plugin_dir_url( __FILE__ ) . 'js/tryit.js', array(), $this->version, false);
-=======
 			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/getEmPixels.js', array('jquery'), $this->version, false);
-			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/term.js', array('jquery'), $this->version, false);
-			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tryit.js', array('jquery'), $this->version, false);
->>>>>>> d7d227101f8a1411315d703ebd80ac4b17e423d1
+			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/term.js', array(), $this->version, false);
+			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tryit.js', array(), $this->version, false);
 		}
 	}
 
