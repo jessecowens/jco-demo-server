@@ -110,6 +110,9 @@ class Jco_Demo_Server_Public {
 		}
 	}
 	public function handle_jco_demo_server_shortcode() {
+			if ( !is_user_logged_in() ) {
+					return '<div><p>You must be logged in to use the interactive terminal. <a href="' . wp_login_url() . '">Log In or Register</a></p></div>';
+			}
 			$demo_html = '
 			<div class="panel panel-success" id="tryit_status_panel" style="display:none">
 	                <div class="panel-heading">Server status</div>
