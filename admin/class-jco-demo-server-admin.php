@@ -101,6 +101,7 @@ class Jco_Demo_Server_Admin {
 	}
 
 	public function handle_jco_demo_server_shortcode() {
+		return 'Shortcode is working';
 		$demo_html = '
 		<div class="panel panel-success" id="tryit_status_panel" style="display:none">
                 <div class="panel-heading">Server status</div>
@@ -221,7 +222,7 @@ class Jco_Demo_Server_Admin {
                 </div>
             </div>
 		';
-		return "ShortCode is Working";
+		return" $demo_html";
 	}
 
 }
