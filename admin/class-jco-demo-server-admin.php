@@ -221,7 +221,7 @@ class Jco_Demo_Server_Admin {
                 </div>
             </div>
 		';
-		return $demo_html;
+		return "ShortCode is Working";
 	}
 
 }
