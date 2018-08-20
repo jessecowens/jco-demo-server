@@ -116,7 +116,7 @@ class Jco_Demo_Server_Public {
 			$demo_html = '
 			<div class="panel panel-success" id="tryit_status_panel" style="display:none">
 	                <div class="panel-heading">Server status</div>
-	                <div class="panel-body" id="tryit_online_message" style="display:none">
+	                <div class="panel-body" id="tryit_online_message" style="display:none;color: black;">
 	                    You are connected over: <span id="tryit_protocol"></span> (<span id="tryit_address"></span>)<br/>
 	                    The demo server is currently running <span id="tryit_count"></span> user sessions out of <span id="tryit_max"></span>
 	                </div>
@@ -134,17 +134,12 @@ class Jco_Demo_Server_Public {
 	                </div>
 	            </div>
 
-	            <div class="panel panel-primary" id="tryit_terms_panel" style="display:none">
-	                <div class="panel-heading">Terms of service</div>
-	                <div class="panel-body" id="tryit_terms"></div>
-	            </div>
-
 	            <div class="panel panel-warning" id="tryit_start_panel" style="display:none">
 	                <div class="panel-heading">Start</div>
 	                <div class="panel-body">
 	                    <button class="btn btn-default btn-lg" id="tryit_accept" type="button">
 	                        <span aria-hidden="true" class="glyphicon glyphicon-ok"></span>
-	                        I have read and accept the terms of service above
+	                        Start the Container
 	                    </button>
 
 	                    <div id="tryit_progress" style="display:none;width:100%;text-align:center;">
