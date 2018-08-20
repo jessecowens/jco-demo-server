@@ -138,7 +138,6 @@ class Jco_Demo_Server_Public {
 	                <div class="panel-heading">Start</div>
 	                <div class="panel-body">
 	                    <button class="btn btn-default btn-lg" id="tryit_accept" type="button">
-	                        <span aria-hidden="true" class="glyphicon glyphicon-ok"></span>
 	                        Start the Container
 	                    </button>
 
@@ -168,7 +167,6 @@ class Jco_Demo_Server_Public {
 	                <div id="tryit_console" style="background-color:black;"></div>
 
 	                <button class="btn btn-default btn-lg" id="tryit_console_reconnect" type="button" style="display:none">
-	                    <span aria-hidden="true" class="glyphicon glyphicon-repeat"></span>
 	                    Reconnect
 	                </button>
 	            </div>
@@ -179,11 +177,7 @@ class Jco_Demo_Server_Public {
 
 	                <div class="panel-body" id="tryit_error_full" style="display:none">
 	                    The server is currently full, please try again in a few minutes.
-
-	                    <br /><br />
-
 	                    <button class="btn btn-default btn-lg tryit_goback" type="button">
-	                        <span aria-hidden="true" class="glyphicon glyphicon-home"></span>
 	                        Start over
 	                    </button>
 	                </div>
@@ -195,7 +189,6 @@ class Jco_Demo_Server_Public {
 	                    <br /><br />
 
 	                    <button class="btn btn-default btn-lg tryit_goback" type="button">
-	                        <span aria-hidden="true" class="glyphicon glyphicon-home"></span>
 	                        Start over
 	                    </button>
 	                </div>
@@ -207,22 +200,14 @@ class Jco_Demo_Server_Public {
 
 	                <div class="panel-body" id="tryit_error_unknown" style="display:none">
 	                    An unknown error occured. Please try again in a few minutes.
-
-	                    <br /><br />
-
 	                    <button class="btn btn-default btn-lg tryit_goback" type="button">
 	                        <span aria-hidden="true" class="glyphicon glyphicon-home"></span>
 	                        Start over
 	                    </button>
 	                </div>
-
 	                <div class="panel-body" id="tryit_error_missing" style="display:none">
 	                    The container you\'re trying to connect to doesn\'t exist anymore.
-
-	                    <br /><br />
-
 	                    <button class="btn btn-default btn-lg tryit_goback" type="button">
-	                        <span aria-hidden="true" class="glyphicon glyphicon-home"></span>
 	                        Start over
 	                    </button>
 	                </div>
