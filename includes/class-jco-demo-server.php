@@ -172,7 +172,6 @@ class Jco_Demo_Server {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-		add_shortcode( 'jco_demo_server' , 'handle_jco_demo_server_shortcode');
 	}
 
 	/**
