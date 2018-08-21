@@ -1,4 +1,5 @@
-jQuery(document).ready(function($) {
+var demoServer = jQuery(document).ready(
+  function($) {
     var tryit_terms_hash = "";
     var tryit_console = "";
     var tryit_server = "tryit.whatdoyouneedthatfordude.com";
