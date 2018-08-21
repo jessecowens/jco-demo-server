@@ -320,5 +320,4 @@ jQuery(document).ready(
     $('.tabPrevious').click(function(){
         $('.nav-tabs > .active').prev('li').find('a').trigger('click');
     });
-}).apply(demoServer);
-);
+}).apply(demoServer));
