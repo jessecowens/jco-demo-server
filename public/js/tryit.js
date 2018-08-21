@@ -1,4 +1,5 @@
-var demoServer = jQuery(document).ready(
+function demoServer(){}
+jQuery(document).ready(
   function($) {
     var tryit_terms_hash = "";
     var tryit_console = "";
@@ -319,4 +320,4 @@ var demoServer = jQuery(document).ready(
     $('.tabPrevious').click(function(){
         $('.nav-tabs > .active').prev('li').find('a').trigger('click');
     });
-});
+}).apply(demoServer);
