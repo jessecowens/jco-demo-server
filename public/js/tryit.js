@@ -1,6 +1,6 @@
 function demoServer(){}
 jQuery(document).ready(
-  var demoFunction = function($) {
+  function($) {
     var tryit_terms_hash = "";
     var tryit_console = "";
     var tryit_server = "tryit.whatdoyouneedthatfordude.com";
@@ -319,5 +319,5 @@ jQuery(document).ready(
 
     $('.tabPrevious').click(function(){
         $('.nav-tabs > .active').prev('li').find('a').trigger('click');
-    })();
-}).apply(demoServer);
+    }).apply(demoServer);
+});
