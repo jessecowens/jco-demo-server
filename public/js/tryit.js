@@ -1,5 +1,5 @@
 jQuery(document).ready(
-  function($demoServerdemoServer) {
+  function($demoServer) {
     var tryit_terms_hash = "";
     var tryit_console = "";
     var tryit_server = "tryit.whatdoyouneedthatfordude.com";
@@ -84,7 +84,7 @@ jQuery(document).ready(
                 screenKeys: false
             });
 
-            $demoServerdemoServer('#tryit_console_reconnect').css("display", "none");
+            $demoServer('#tryit_console_reconnect').css("display", "none");
             term.open(document.getElementById("tryit_console"))
 
             term.on('data', function(data) {
