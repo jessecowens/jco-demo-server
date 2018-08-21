@@ -319,4 +319,4 @@ jQuery(document).ready(
     $demoServer('.tabPrevious').click(function(){
         $demoServer('.nav-tabs > .active').prev('li').find('a').trigger('click');
     });
-}).apply(demoServer);
+});
