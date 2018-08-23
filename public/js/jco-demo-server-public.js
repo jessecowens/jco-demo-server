@@ -1,5 +1,5 @@
 (function( $demoServer ) {
-	'use strict';
+	//'use strict';
 	var tryit_terms_hash = "";
 	var tryit_console = "";
 	var tryit_server = "tryit.whatdoyouneedthatfordude.com";
