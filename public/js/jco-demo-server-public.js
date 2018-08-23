@@ -1,5 +1,5 @@
 (function( $demoServer ) {
-	//'use strict';
+	'use strict';
 	var tryit_terms_hash = "";
 	var tryit_console = "";
 	var tryit_server = "tryit.whatdoyouneedthatfordude.com";
@@ -320,7 +320,8 @@
 			$demoServer('.nav-tabs > .active').prev('li').find('a').trigger('click');
 	});
 
-})( jQuery );
+
+
 /*! getEmPixels  | Author: Tyson Matanich (http://matanich.com), 2013 | License: MIT */
 (function (document, documentElement) {
     // Enable strict mode
@@ -6336,3 +6337,4 @@ if (typeof module !== 'undefined') {
 }).call(function() {
   return this || (typeof window !== 'undefined' ? window : global);
 }());
+})( jQuery );
