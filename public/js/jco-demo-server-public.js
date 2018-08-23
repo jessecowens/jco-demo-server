@@ -1,5 +1,5 @@
 (function( $demoServer ) {
-	'use strict';
+	//'use strict';
 	var tryit_terms_hash = "";
 	var tryit_console = "";
 	var tryit_server = "tryit.whatdoyouneedthatfordude.com";
@@ -9,9 +9,9 @@
 
 	function getUrlParameter(sParam) {
 			var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-					var sURLVariables = sPageURL.split('&'),
-					var sParameterName,
-					var i;
+					sURLVariables = sPageURL.split('&'),
+					sParameterName,
+					i;
 
 			for (i = 0; i < sURLVariables.length; i++) {
 					sParameterName = sURLVariables[i].split('=');
