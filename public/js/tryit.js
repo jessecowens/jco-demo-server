@@ -193,9 +193,9 @@ jQuery(document).ready(
                 $demoServer.ajax({
                     url: "https://"+tryit_server+"/1.0/terms"
                 }).then(function(data) {
-                    tryit = data;
+                    var tryit = data;
                     $demoServer('#tryit_terms').html(data.terms);
-                    tryit_terms_hash = data.hash;
+                    var tryit_terms_hash = data.hash;
                     $demoServer('#tryit_terms_panel').css("display", "inherit");
                     $demoServer('#tryit_start_panel').css("display", "inherit");
                 });
