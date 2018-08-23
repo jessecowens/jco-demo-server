@@ -1,6 +1,6 @@
 jQuery(document).ready(
   function($demoServer) {
-    'use strict';
+    //'use strict';
     var tryit_terms_hash = "";
     var tryit_console = "";
     var tryit_server = "tryit.whatdoyouneedthatfordude.com";
@@ -193,9 +193,9 @@ jQuery(document).ready(
                 $demoServer.ajax({
                     url: "https://"+tryit_server+"/1.0/terms"
                 }).then(function(data) {
-                    var tryit = data;
+                    tryit = data;
                     $demoServer('#tryit_terms').html(data.terms);
-                    var tryit_terms_hash = data.hash;
+                    tryit_terms_hash = data.hash;
                     $demoServer('#tryit_terms_panel').css("display", "inherit");
                     $demoServer('#tryit_start_panel').css("display", "inherit");
                 });
