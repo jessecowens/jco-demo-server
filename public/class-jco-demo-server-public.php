@@ -115,7 +115,7 @@ class Jco_Demo_Server_Public {
 					return '<div><p>You must be logged in to use the interactive terminal. <a href="' . wp_registration_url() . '">Log In or Register</a></p></div>';
 			}
 			$demo_html = '
-			 <iframe src="' . plugin_dir_url( __FILE__ ) . partials/jco-demo-server-public-display.php . '"></iframe>
+			 <iframe src="' . plugin_dir_url( __FILE__ ) . 'partials/jco-demo-server-public-display.php' . '"></iframe>
 			';
 			return $demo_html;
 		}
