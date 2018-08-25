@@ -152,7 +152,7 @@ jQuery(document).ready(
             }
         }
     }
-    setupPre()
+    //setupPre()
 
     $demoServer('.tryit_run').click(function() {
         if (!term || !sock) {
