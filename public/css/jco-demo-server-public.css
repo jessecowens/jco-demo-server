@@ -2,7 +2,7 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
- #navbar-title {
+/* #navbar-title {
     color: white;
 }
 
@@ -39,7 +39,7 @@ div.large_content p {
 div.row p {
     font-size: 14px;
 }
-
+*/
 hr {
     margin-top: 40px;
     margin-bottom: 40px;
